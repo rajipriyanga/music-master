@@ -10,10 +10,12 @@
 }
 
 body {
-  text-align: center;
   font-size: 20px;
-  padding: 2.5%;
+  /*padding: 2.5%;*/
   font-family: 'RobotoCondensed';
+    background-color: #212121;
+  text-align: center;
+  color: white;
 }
 
 h1, h2, h3, h4, h5 {
@@ -46,4 +48,64 @@ h1, h2, h3, h4, h5 {
 @keyframes fade-in {
   from {opacity: 0}
   to {opacity: 100}
+}
+
+.search-container{
+  /*background-color: black;*/
+  color:white;
+  margin: 0px;
+  padding: 0px;
+}
+.track-card{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  padding: 5px;
+  border: 2px solid white;
+  margin: 20px;
+}
+.track-title{
+  position: absolute;
+  bottom: 0px;
+  background: white;
+  padding: 0px;
+  color: black;
+  width: 100%;
+  word-wrap: break-word;
+  left: 0px;
+}
+.top-tracks{
+  /*display:flex; */
+}
+.track-icon{
+  opacity: 1;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  transition: .3s ease;
+  color: grey;
+}
+
+.track-card:hover .track-icon {
+  opacity: 0.7;
+  color :white;
+}
+
+.track-card:hover  {
+  opacity: 0.4;
+}
+.artist-cover{
+  opacity: 0.3;
+  z-index: 1;
+}
+.artist-profile{
+  z-index: 3000;
+}
+.artist-info{
+  z-index: 4000;
 }
